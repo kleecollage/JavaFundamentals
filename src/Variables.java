@@ -10,6 +10,7 @@ public class Variables {
         System.out.println(age);
         System.out.println(price);
         System.out.println(available);
+        System.out.println("gender = " + gender);
     }
 
 }

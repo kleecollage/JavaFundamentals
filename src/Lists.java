@@ -17,5 +17,12 @@ public class Lists {
             System.out.println(item);
         }
 
+        // LAMBDA FUNCTIONS
+        myList.forEach(item -> System.out.println("Day: " + item));
+
+        myList.forEach(System.out::println);
+
+        // List<String> names = Arrays.asList("John", "Jane", "James")
+
     }
 }

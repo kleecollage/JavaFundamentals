@@ -13,6 +13,16 @@ public class Person {
         this.phone = "";
     }
 
+    @Override
+    public String toString() {
+        return "Person {" +
+                "name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                '}' + " Dir. Memory: " + super.toString();
+    }
+
     public void showPersonName() {
         System.out.println("Name: " + name);
         System.out.println("Lastname: " + lastname);

@@ -14,5 +14,7 @@ public class TestPerson {
         // person2.setName("Jane");
         // person2.setLastname("Smith");
         person2.showPersonName();
+
+        System.out.println(person.toString());
     }
 }

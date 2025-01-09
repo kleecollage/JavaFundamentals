@@ -3,7 +3,7 @@ import java.util.List;
 
 public class Lists {
     public static void main(String[] args) {
-        List<String> myList = new ArrayList();
+        List<String> myList = new ArrayList<>();
         myList.add("Monday");
         myList.add("Tuesday");
         myList.add("Wednesday");
@@ -22,7 +22,7 @@ public class Lists {
 
         myList.forEach(System.out::println);
 
-        // List<String> names = Arrays.asList("John", "Jane", "James")
+        // List<String> names = arrays.Arrays.asList("John", "Jane", "James")
 
     }
 }

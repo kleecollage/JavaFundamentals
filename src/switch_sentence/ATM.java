@@ -1,4 +1,6 @@
-public class ATM {
+package switch_sentence;
+
+public class switch_sentence.ATM {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);
         var balance = 1000f;

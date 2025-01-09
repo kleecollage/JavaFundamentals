@@ -1,3 +1,5 @@
+package for_loop;
+
 public class TriangleDrawing {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);

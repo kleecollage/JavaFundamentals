@@ -1,3 +1,5 @@
+package switch_sentence;
+
 public class WeekDays {
     public static void main(String[] args) {
         var day = 5;

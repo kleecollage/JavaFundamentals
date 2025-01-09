@@ -1,3 +1,5 @@
+package if_sentence;
+
 public class HouseOfMirrors {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);

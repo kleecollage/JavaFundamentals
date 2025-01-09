@@ -1,3 +1,5 @@
+package if_sentence;
+
 import java.util.Scanner;
 
 public class LargestNumber {

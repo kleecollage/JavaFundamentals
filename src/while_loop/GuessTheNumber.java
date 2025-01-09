@@ -1,3 +1,5 @@
+package while_loop;
+
 public class GuessTheNumber {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);

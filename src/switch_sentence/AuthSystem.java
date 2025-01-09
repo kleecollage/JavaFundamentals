@@ -1,3 +1,5 @@
+package switch_sentence;
+
 public class AuthSystem {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);

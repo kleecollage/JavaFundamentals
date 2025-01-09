@@ -1,3 +1,5 @@
+package if_sentence;
+
 public class HotelReservations {
     public static void main(String[] args) {
         var console = new java.util.Scanner(System.in);

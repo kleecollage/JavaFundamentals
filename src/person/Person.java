@@ -1,6 +1,8 @@
 package person;
 
 public class Person {
+    private static int numberOfPersons = 0;
+    private int id;
     private String name;
     private String lastname;
     private String email;
@@ -11,12 +13,15 @@ public class Person {
         this.lastname = lastname;
         this.email = "";
         this.phone = "";
+        // Increment static attribute
+        this.id = ++Person.numberOfPersons;
     }
 
     @Override
     public String toString() {
         return "Person {" +
-                "name='" + name + '\'' +
+                "id=" + id + '\'' +
+                ", name='" + name + '\'' +
                 ", lastname='" + lastname + '\'' +
                 ", email='" + email + '\'' +
                 ", phone='" + phone + '\'' +
@@ -58,5 +63,13 @@ public class Person {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public static int getNumberOfPersons() {
+        return Person.numberOfPersons;
     }
 }

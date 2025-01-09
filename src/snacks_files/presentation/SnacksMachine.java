@@ -44,7 +44,8 @@ public class SnacksMachine {
                 1. Buy Snacks
                 2. Show Ticket
                 3. Add New Snack
-                4. Exit
+                4. Inventory
+                5. Exit
                 Choose an option:\s""");
         return Integer.parseInt(console.nextLine());
     }
@@ -56,11 +57,16 @@ public class SnacksMachine {
             case 1 -> buySnack(console, products, snacksService);
             case 2 -> showTicket(products);
             case 3 -> addSnack(console, snacksService);
-            case 4 -> exit = true;
+            case 4 -> listSnackInventory(console, snacksService);
+            case 5 -> exit = true;
             default -> System.out.println("Invalid option");
         }
 
         return exit;
+    }
+
+    private static void listSnackInventory(Scanner console, ISnacksService snacksService) {
+        snacksService.showSnacks();
     }
 
     private static void buySnack(Scanner console, List<Snack> products, ISnacksService snacksService) {

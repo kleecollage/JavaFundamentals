@@ -1,4 +1,4 @@
-package fit_zone;
+package fit_zone.connection;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

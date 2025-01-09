@@ -1,0 +1,4 @@
+1,Chips,2.25
+2,Soda,2.75
+3,Sandwich,4.35
+4,Candy,0.75

@@ -8,7 +8,6 @@ import lombok.*;
 
 @Entity
 @Data // Getter and Setters methods generated automatically
-@Getter
 @NoArgsConstructor // Empty Constructor
 @AllArgsConstructor // Full Object Constructor
 // @ToString // Method added automatically

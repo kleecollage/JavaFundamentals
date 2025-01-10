@@ -1,9 +1,11 @@
 package gm.fit_zone;
 
+import gm.fit_zone.Service.ClientService;
 import gm.fit_zone.Service.IClientService;
 import gm.fit_zone.model.Client;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -16,7 +18,8 @@ public class FitZoneApplication implements CommandLineRunner {
 	private static final Logger logger = LoggerFactory.getLogger(FitZoneApplication.class);
 	String newLine = System.lineSeparator();
 
-    public FitZoneApplication(IClientService clientService) {
+	@Autowired
+    public FitZoneApplication(ClientService clientService) {
         this.clientService = clientService;
     }
 
